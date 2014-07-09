@@ -1,0 +1,4 @@
+jdbcUrl = jdbc:mysql://200.20.32.120/cardb?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+user = test
+password = test
+devMode = true
