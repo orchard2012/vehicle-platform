@@ -12,7 +12,4 @@ public class User extends Model<User> {
 		
 		return paginate(pageNumber, pageSize, "select * ","from user order by userId asc");
 	}
-
-
-	
 }

@@ -1,40 +1,76 @@
-<fieldset class="solid">
-	<legend>新增用户</legend>
-	<input type="hidden" name="blog.id" value="${(blog.id)!}" />
-	<div>
-		<label>账号</label>
-		<input type="text" name="user.userAcc" value="${(user.userAcc)!}" />${userAccMsg!}
-	</div>
-	<div>
-		<label>密码</label>
-		<input type="text" name="user.userPass" value="${(user.userPass)!}" />${userPassMsg!}
-	</div>
-	<div>
-		<label>真实姓名</label>
-		<input type="text" name="user.userName" value="${(user.userName)!}" />${userNameMsg!}
-	</div>
-	<div>
-		<label>性别</label>
-		<input type="text" name="user.userSex" value="${(user.userSex)!}" />${userSexMsg!}
-	</div>
-	<div>
-		<label>联系电话</label>
-		<input type="text" name="user.userPhone" value="${(user.userPhone)!}" />${userPhoneMsg!}
-	</div>
-	<div>
-		<label>职位</label>
-		<input type="text" name="user.userJob" value="${(user.userJob)!}" />${userJobMsg!}
-	</div>
-	<div>
-		<label>出生年月</label>
-		<input type="text" name="user.userBirth" value="${(user.userBirth)!}" />${userBirthMsg!}
-	</div>
-	<div>
-		<label>所属4S店</label>
-		<input type="text" name="user.userStore" value="${(user.userStore)!}" />${userStoreMsg!}
-	</div>
-	<div>
-		<label>&nbsp;</label>
-		<input value="提交" type="submit">
-	</div>
-</fieldset>
+<div class="form-group">
+<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 用户账号 </label>
+<div class="col-sm-9">
+<input type="text" name="user.userAcc" value="${(user.userAcc)!}" placeholder="输入4~10位中文、英文或数字" class="col-xs-10 col-sm-5" />
+${userNameMsg!}
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-sm-3 control-label no-padding-right" for="form-field-2"> 登录密码 </label>
+<div class="col-sm-9">
+<input type="password" name="user.userPass" value="${(user.userPass)!}" placeholder="请尽量使用字母和数字组合" class="col-xs-10 col-sm-5" />
+<span class="help-inline col-xs-12 col-sm-7">
+<span class="middle">${userPassMsg!}</span>
+</span>
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 真实姓名 </label>
+<div class="col-sm-9">
+<input type="text" name="user.userName" value="${(user.userName)!}" placeholder="输入用户真实姓名" class="col-xs-10 col-sm-5" />
+${userNameMsg!}
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 用户性别 </label>
+<div class="col-sm-9">
+<input type="text" name="user.userSex" value="${(user.userSex)!}" placeholder="输入0代表女，输入1代表男" class="col-xs-10 col-sm-5" />
+${userSexMsg!}
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 联系电话 </label>
+<div class="col-sm-9">
+<input type="text" name="user.userPhone" value="${(user.userPhone)!}" placeholder="输入手机号码" class="col-xs-10 col-sm-5" />
+${userPhoneMsg!}
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 用户职位 </label>
+<div class="col-sm-9">
+<input type="text" name="user.userJob" value="${(user.userJob)!}" placeholder="输入职位名称" class="col-xs-10 col-sm-5" />
+${userJobMsg!}
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 用户生日 </label>
+<div class="col-sm-9">
+<input type="text" name="user.userBirth" value="${(user.userBirth)!}" placeholder="输入出生日期" class="col-xs-10 col-sm-5" />
+${userBirthMsg!}
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 所属4S店 </label>
+<div class="col-sm-9">
+<input type="text" name="user.userStore" value="${(user.userStore)!}" placeholder="输入所属4s店" class="col-xs-10 col-sm-5" />
+${userStoreMsg!}
+</div>
+</div>
+
+<div class="form-group">	
+<button class="btn btn-white btn-info btn-round" type="submit">
+<i class="ace-icon fa fa-floppy-o bigger-120 blue"></i>
+保存
+</button>
+<button class="btn btn-white btn-default btn-round">
+<i class="ace-icon fa fa-times red2"></i>
+取消
+</button>	
+</div>	

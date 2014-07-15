@@ -1,10 +1,60 @@
-<#include "/common/_layout.html" />
+<#include "/common/_layout.html"/>
 <@layout>
-<h1>用户管理 ---&gt; 新增用户
-</h1>
-<div class="form_box">
-	<form action="/user/save" method="post">
-		<#include "_form.html" />
-	</form>
-</div>
+<div class="main-content">
+				<!-- #section:basics/content.breadcrumbs -->
+				<div class="breadcrumbs" id="breadcrumbs">
+					<script type="text/javascript">
+						try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+					</script>
+
+					<ul class="breadcrumb">
+						<li>
+							<i class="ace-icon fa fa-home home-icon"></i>
+							<a href=".">主页</a>
+						</li>
+
+						<li>
+							<a href="#">系统管理</a>
+						</li>
+						<li class="active">客户经理</li>
+					</ul><!-- /.breadcrumb -->
+
+					<!-- #section:basics/content.searchbox -->
+					<div class="nav-search" id="nav-search">
+						<form class="form-search">
+							<span class="input-icon">
+								<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+								<i class="ace-icon fa fa-search nav-search-icon"></i>
+							</span>
+						</form>
+					</div><!-- /.nav-search -->
+
+					<!-- /section:basics/content.searchbox -->
+				</div>
+
+				<!-- /section:basics/content.breadcrumbs -->
+				<div class="page-content">
+					<!-- #section:settings.box -->
+					<#include "/common/skin.html"/>
+					<!-- /section:settings.box -->
+					<div class="page-header">
+						<h1>
+							系统管理
+							<small>
+								<i class="ace-icon fa fa-angle-double-right"></i>
+								客户经理
+							</small>
+						</h1>
+					</div><!-- /.page-header -->
+					<div class="row">
+						<div class="col-xs-12">
+							<!-- PAGE CONTENT BEGINS -->
+							<form class="form-horizontal" role="form" action="/user/save" method="post">
+								<!-- #section:elements.form -->
+								<#include "_form.html" />
+								</form>
+								</div>
+								</div>
+					</div><!-- /.page-content -->
+				</div><!-- /.main-content -->
 </@layout>
